@@ -9,10 +9,10 @@ class DateValueConverter implements ValueConverter {
 	}
 	
 	def convert(value) {
-		new Date()
+		return new Date()
 	}
 	
 	Class<?> getTargetType() {
-        Date.class
+        Date
     }
 }
