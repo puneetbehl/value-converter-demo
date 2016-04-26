@@ -8,8 +8,10 @@ class Address {
 	String city
 	String state
 	String postalCode
+	String contact
 	
 	static constraints = {
 		streetAddress nullable: false
+		contact phoneNumber: true
 	}
 }

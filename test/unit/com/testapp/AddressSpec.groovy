@@ -7,6 +7,7 @@ import grails.test.mixin.web.ControllerUnitTestMixin
 
 @TestMixin(ControllerUnitTestMixin)
 class AddressSpec extends Specification {
+	
 	void testValidate() {
 		when:
 		Address address = new Address() 
@@ -15,5 +16,14 @@ class AddressSpec extends Specification {
 		!address.validate() &
 		address.errors.getFieldError('streetAddress').code == 'nullable'
 		
+	}
+	
+	void testDefaultConstraints() {
+		when:
+		Address address = new Address()
+		
+		then:
+		!address.validate() &
+		address.errors.getFieldError('contact')?.code == null
 	}
 }
