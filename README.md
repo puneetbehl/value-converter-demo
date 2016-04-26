@@ -2,7 +2,7 @@
 
 ####  What I want to do?
 
-Basically, we have a mutli-tenant application where we need to parse date from string (in prarams) to Date object based on Tenant's timezone. For example - 
+Basically, we have a mutli-tenant application where we need to parse date from string (in params) to Date object based on Tenant's timezone. For example - 
 
 * For tenant 1 in IST zone, and '04/19/2015' in params means '04/18/2015 18:00 UTC' in db.
 * For tenant 2 in CST zone, and '04/19/2015' in params means '04/19/2015 05:30 UTC' in db.
