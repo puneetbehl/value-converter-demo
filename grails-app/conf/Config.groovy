@@ -1,3 +1,6 @@
+import org.codehaus.groovy.grails.validation.ConstrainedProperty
+import com.testapp.constraints.*
+
 // locations to search for config files that get merged into the main config;
 // config files can be ConfigSlurper scripts, Java properties files, or classes
 // in the classpath in ConfigSlurper format
@@ -115,3 +118,5 @@ log4j.main = {
            'org.hibernate',
            'net.sf.ehcache.hibernate'
 }
+
+ConstrainedProperty.registerNewConstraint(PhoneConstraint.CONSTRAINT_NAME, PhoneConstraint.class)

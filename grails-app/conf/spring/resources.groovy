@@ -1,6 +1,10 @@
+import com.testapp.DateValueConverter
+import com.testapp.databinder.TenantIdDataBinderListenerAdapter
+
 // Place your Spring DSL code here
 beans = {
 	
-	dateConverter com.testapp.DateValueConverter
+	dateConverter DateValueConverter
+	tenantIdDataBinderListenerAdapter TenantIdDataBinderListenerAdapter
 	
 }

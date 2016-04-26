@@ -10,7 +10,7 @@ stacktrace.log
 /*.log
 /*DB.*
 .DS_Store
-/target/
+/target/*
 /out/
 /web-app/plugins
 /web-app/WEB-INF/classes
